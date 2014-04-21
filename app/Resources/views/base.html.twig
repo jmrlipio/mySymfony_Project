@@ -5,13 +5,18 @@
         <meta charset="UTF-8" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <title>{% block title %}Blog Post{% endblock %}</title>
 
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         {% block stylesheets %}			
 			<link href="{{ asset('bundles/joneblog/css/main.css') }}" rel="stylesheet" />
+			
+			<link rel="stylesheet" type="text/css" href="{{ asset('bundles/joneblog/css/slider.css') }}"  />
+			<link rel="stylesheet" type="text/css" href="{{ asset('bundles/joneblog/css/normalize.css') }}"  />		
+			<link rel="stylesheet" type="text/css" href="{{ asset('bundles/joneblog/css/demo.css') }}"  />
+			<link rel="stylesheet" type="text/css" href="{{ asset('bundles/joneblog/css/component.css') }}"  />
 			<link href="{{ asset('bundles/joneblog/bootstrap/css/bootstrap-responsive.css') }}" rel="stylesheet" media="screen"/>
-			<link rel="stylesheet" type="text/css" href="{{ asset('bundles/joneblog/css/style2.css') }}"  />
 			<noscript>
 				<link rel="stylesheet" type="text/css" href="css/nojs.css" />
 			</noscript>
