@@ -1,0 +1,29 @@
+jone_blog_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: JoneBlogBundle:Default:index }
+    
+JoneBlogBundle_post:
+    resource: "@JoneBlogBundle/Resources/config/routing/post.yml"
+    prefix:   /post
+    
+JoneBlogBundle_home:
+    resource: "@JoneBlogBundle/Resources/config/routing/home.yml"
+    prefix:   /home
+    
+JoneBlogBundle_aboutus:
+    resource: "@JoneBlogBundle/Resources/config/routing/aboutus.yml"
+    prefix:   /about-us
+
+JoneBlogBundle_contactus:
+    resource: "@JoneBlogBundle/Resources/config/routing/contactus.yml"
+    prefix:   /contact-us
+
+JoneBlogBundle_property:
+        resource: "@JoneBlogBundle/Resources/config/routing/property.yml"
+        prefix:   /property
+
+JoneBlogBundle_gallery:
+    resource: "@JoneBlogBundle/Resources/config/routing/gallery.yml"
+    prefix:   /gallery
+
+
